@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!--
+      Cleartext (http://) is allowed only for the Android emulator's host
+      loopback (10.0.2.2) and localhost. If you test against a physical
+      device on your LAN, either add your dev machine's specific LAN IP
+      here (e.g. <domain includeSubdomains="false">192.168.1.42</domain>)
+      or, for that debug session only, put your real IP in this list —
+      never ship a build with a broad cleartext allowance. Any production
+      backend must use https:// and needs no entry here at all.
+    -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">localhost</domain>
+        <domain includeSubdomains="false">10.0.2.2</domain>
+    </domain-config>
+    <base-config cleartextTrafficPermitted="false" />
+</network-security-config>

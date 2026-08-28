@@ -1,0 +1,21 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.9.2
+pydantic-settings==2.5.2
+sqlalchemy==2.0.35
+python-multipart==0.0.9
+python-dotenv==1.0.1
+aiofiles==24.1.0
+pydub==0.25.1
+soundfile==0.12.1
+numpy==1.26.4
+nltk==3.9.1
+
+# TTS engine (Coqui XTTS-v2). The community-maintained fork keeps working
+# builds for current Python/PyTorch. See README "TTS Model Choice".
+coqui-tts==0.27.5
+torch==2.4.1
+torchaudio==2.4.1
+
+# Auth
+passlib[bcrypt]==1.7.4
